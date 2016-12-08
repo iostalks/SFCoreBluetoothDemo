@@ -49,6 +49,8 @@
         _peripherals = _peripheralsList.copy;
     }
     
+    // 在某个地方停止扫描并连接至周边设备
+    [_centralManager stopScan];
     [_centralManager connectPeripheral:peripheral options:nil];
 }
 
